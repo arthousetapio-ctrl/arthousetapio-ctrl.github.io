@@ -1,0 +1,38 @@
+---
+layout: default_en
+---
+
+
+  <ul>
+    
+
+    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  </ul>
+
+
+  <div class="tile-container">
+    {% for item in site.artists_en %}
+    <div class="tile-card">
+
+      <div class="tile-card-child1">
+        <a href="{{ item.url }}">{{ item.name }}</a>
+
+      </div>
+
+      <div class="tile-card-child-portrait">
+      
+    <img class = "tile-portrait" alt="{{item.img1_alt_text}}" src = {{ item.tile_image }} />
+      </div>
+
+      <div class="tile-card-child3">
+
+      </div>
+
+
+
+
+
+
+    </div>
+    {% endfor %}
+  </div>

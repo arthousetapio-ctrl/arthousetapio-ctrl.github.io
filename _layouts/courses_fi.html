@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+lots of events like 
+            {% include events_includes_fi.html %}
+
+<div class="event-text-header"> Tulevat Tapahtumat</div>
+
+<div>
+    {% assign sorted = site.upcoming_fi | sort: 'date' %}
+    {% for item in sorted %}
+    <div class="event-list-container1">
+        <div class="flex-child-item">
+            <h1> <a href="{{ item.url }}">{{ item.title }}</a></h1>
+        </div>
+
+        <div class="event-text-large"> 4 places available</div>
+        <div class="event-text-large"> {{ item.date | date: "%-d.%m.%Y" }} </div>
+       
+        <div class="event-text-large"> 50€ </div>
+
+
+        <p class="main-page-text">
+            In this layout, we display the areas in source order for any screen less
+            that 500 pixels wide. We go to a two column layout, and then to a three
+            column layout by redefining the grid, and the placement of items on the
+            grid.
+        </p>
+
+    </div>
+    {% endfor %}
+</div>
+
+<hr class="hr-events"> 
+
+<div class="event-text-previous"> Edelliset Tapahtumat</div>
+
+<div>
+    {% assign sorted = site.previous_fi | sort: 'date' %}
+    {% for item in sorted %}
+    <div class="event-list-container1">
+        <div class="flex-child-item">
+            <h1> <a href="{{ item.url }}">{{ item.title }}</a></h1>
+        </div>
+
+        <div class="event-text-large"> 4 places remaining</div>
+        <div class="event-text-large"> {{ item.date | date: "%-d.%m.%Y" }} </div>
+       
+        <div class="event-text-large"> 50€ </div>
+
+
+        <p class="main-page-text">
+            In this layout, we display the areas in source order for any screen less
+            that 500 pixels wide. We go to a two column layout, and then to a three
+            column layout by redefining the grid, and the placement of items on the
+            grid.
+        </p>
+
+    </div>
+    {% endfor %}
+</div>

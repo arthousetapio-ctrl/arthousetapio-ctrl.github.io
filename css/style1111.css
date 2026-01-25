@@ -1,0 +1,72 @@
+@font-face {
+    font-family: NotoSerif1;
+    src: url(fonts/NotoSerif-Light.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'NotoSerif1', serif;
+    color: #777;
+
+}
+
+:root {
+    --header-min-row-size: 2vh;
+}
+
+html {
+    background: #ffffff
+}
+
+
+
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1vw;
+    width: 100%;
+    grid-template-areas: "header" "content" "footer";
+}
+
+.child-header {
+    grid-area: header;
+}
+
+.child-content {
+    grid-area: content;
+    margin: 1em;
+}
+
+.child-footer {
+    grid-area: footer;
+    margin: 1em;
+}
+
+.main-page-img {
+
+    width: auto;
+    max-height: 40vh;
+}
+
+.footer-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+@media all and (36em <=width <=80em) {
+    html {
+        background: #592886
+    }
+
+
+}
+
+}

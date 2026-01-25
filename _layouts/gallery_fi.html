@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% assign space_groups= site.gallery_fi | group_by: 'ymparistotaide' %}
+{% for s_group in space_groups %}
+  {{ s_group.name }}
+  {% endfor %}
+
+  <ul>
+    
+
+    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  </ul>
+
+
+  <div class="tile-container">
+    {% for item in site.gallery_fi %}
+    {% if item.page_type == "gallery" %}
+    <div class="tile-card">
+
+      <div class="tile-card-child1">
+        <a href="{{ item.url }}">{{ item.name }}</a>
+
+      </div>
+
+      <div class="tile-card-child-portrait">
+      
+    <img class = "tile-portrait" alt="{{item.img1_alt_text}}" src = {{ item.tile_image }} />
+      </div>
+
+      <div class="tile-card-child3">
+
+      </div>
+      
+
+
+
+
+
+
+    </div>
+     {% endif %}
+    {% endfor %}
+  </div>

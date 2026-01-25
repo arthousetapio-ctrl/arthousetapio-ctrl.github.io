@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+
+
+.child-header-nav-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1vw;
+    grid-template-areas: "bars" "links";
+    border-radius: 5px;
+    padding-left: 1em;
+
+}
+
+.child-bars {
+    grid-area: bars;
+}
+
+
+.child-links {
+    grid-area: links;
+}
+
+.child-header-image {}
+
+.child-header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2em;
+    height: 100%;
+    margin-left: auto;
+    min-height: 7.5em;
+}
+
+
+child-header-title-container {
+
+    flex: 2 1 auto;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.menu-icon {
+    width: 40px;
+    z-index: 99999;
+}
+
+.menu-icon>.line {
+    background-color: #777;
+    height: 0.2em;
+    display: block;
+}
+
+.menu-icon>.line+.line {
+    margin-top: 0.3em;
+}
+
+.nav-header-items {
+
+    visibility: hidden;
+    flex-grow: 1;
+    font-size: 1.2rem;
+}
+
+.li-nav-menu {
+    margin: 0.7em 0;
+}
+
+
+.li-nav-menu1 {
+    margin: 0.978em 0;
+}
+
+.nav-header-items.active {
+    visibility: visible;
+    font-size: 1.2rem;
+}
+
+
+/* Make a one column-layout instead of three-column layout */
+@media (width < 22em) {
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

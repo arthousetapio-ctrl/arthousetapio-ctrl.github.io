@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content
+}
+
+.child-header-nav-button {
+    grid-area: nav-bar;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1vw;
+    width: 100%;
+    grid-template-areas: "bars" "links";
+
+}
+
+.child-bars {
+    grid-area: bars;
+}
+
+
+.child-links {
+    grid-area: links;
+}
+
+.child-header-image {}
+
+.child-header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2em;
+    width: 100%;
+
+}
+
+child-header-title-container {
+
+    flex: 2 1 auto;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.menu-icon {
+    width: 40px;
+    z-index: 99999;
+}
+
+.menu-icon>.line {
+    background-color: #777;
+    height: 0.2em;
+    display: block;
+}
+
+.menu-icon>.line+.line {
+    margin-top: 0.3em;
+}
+
+.nav-header-items {
+
+    visibility: hidden;
+    flex-grow: 1;
+    font-size: 1.2rem;
+}
+
+li {
+    margin: 0.7em 0;
+}
+
+.nav-header-items.active {
+    visibility: visible;
+    font-size: 1.2rem;
+}
+
+.header-image {
+    width: auto;
+    max-height: 45vh;
+}
+
+/* Make a one column-layout instead of three-column layout */
+@media (width < 22em) {
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

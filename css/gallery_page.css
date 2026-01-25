@@ -1,0 +1,27 @@
+.page-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: nav;
+    height: auto;
+    gap: 3em;
+
+}
+
+.page-image1 {
+    height: auto;
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.page-image2 {
+    height: auto;
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.page-spacing {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}

@@ -5,26 +5,39 @@ const acceptBtn =
 const rejectBtn = 
     document.querySelector(".rejectButton");
 
+
+    
+acceptBtn.addEventListener("click", () => {
+  acceptBtn.classList.toggle("hide");
+  });
+
 acceptBtn.onclick = () => {
-    document.cookie = "CookieBy=ArtHouseTapio; max-age="
-        + 60 * 60 * 24;
-    if (document.cookie) {
-        consentBox.classList.add("hide");
-    } else {
-        alert
-            ("Cookie can't be set! Please"+
-              " unblock this site from the cookie"+
-              " setting of your browser.");
-    }
-};
+   localStorage.setItem('cookiebannerstate','accept')
+    };
+
+
 
 rejectBtn.onclick = () => {
-    alert(
-        "Cookies rejected. Some functionality may be limited.");
-    consentBox.classList.add("hide");
-};
+   localStorage.setItem('cookiebannerstate','refuse')
+    };
 
-let checkCookie = 
-    document.cookie.indexOf("CookieBy=ArtHouseTapio");
-checkCookie !== -1 ? consentBox.classList.add("hide") :
-    consentBox.classList.remove("hide");
+
+if (localStorage.getItem('cookiebannerstate') === 'accept') {
+    
+    consentBox.classList.toggle("hide");
+}
+
+if (localStorage.getItem('cookiebannerstate') === 'refuse') {
+    consentBox.classList.toggle("hide");
+}
+
+
+
+const hamMenu = document.querySelector(".menu-icon");
+
+const offScreenMenu = document.querySelector(".nav-header-items");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});

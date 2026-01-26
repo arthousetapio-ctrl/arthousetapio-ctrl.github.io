@@ -1,26 +1,9 @@
 const consentBox = 
     document.getElementById("consentBox");
-const acceptBtn = 
+const acceptButton1 = 
     document.querySelector(".consentButton");
-const rejectBtn = 
+const rejectButton1 = 
     document.querySelector(".rejectButton");
-
-
-    
-acceptBtn.addEventListener("click", () => {
-  acceptBtn.classList.toggle("hide");
-  });
-
-acceptBtn.onclick = () => {
-   localStorage.setItem('cookiebannerstate','accept')
-    };
-
-
-
-rejectBtn.onclick = () => {
-   localStorage.setItem('cookiebannerstate','refuse')
-    };
-
 
 if (localStorage.getItem('cookiebannerstate') === 'accept') {
     
@@ -30,14 +13,17 @@ if (localStorage.getItem('cookiebannerstate') === 'accept') {
 if (localStorage.getItem('cookiebannerstate') === 'refuse') {
     consentBox.classList.toggle("hide");
 }
+    
+acceptButton1.addEventListener("click", () => {
+  consentBox.classList.toggle("hide");
+  localStorage.setItem('cookiebannerstate','accept')
+  });
+
+rejectButton1.addEventListener("click", () => {
+  consentBox.classList.toggle("hide");
+  localStorage.setItem('cookiebannerstate','refuse')
+  });
 
 
 
-const hamMenu = document.querySelector(".menu-icon");
 
-const offScreenMenu = document.querySelector(".nav-header-items");
-
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
-});

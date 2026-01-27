@@ -1,27 +1,30 @@
-const consentBox = 
+var consentBox = 
     document.getElementById("consentBox");
 const acceptButton1 = 
     document.querySelector(".consentButton");
 const rejectButton1 = 
     document.querySelector(".rejectButton");
 
-if (localStorage.getItem('cookiebannerstate') === 'accept') {
-    
-    consentBox.classList.toggle("hide");
+consentBox.style.visibility = "hidden";
+var consentBoxState = localStorage.getItem('cookiebannerstate');
+
+if(consentBoxState == null) {
+    consentBox.style.visibility = "visible";
+
+}
+else {
+   consentBox.style.visibility = "hidden";
 }
 
-if (localStorage.getItem('cookiebannerstate') === 'refuse') {
-    consentBox.classList.toggle("hide");
-}
     
 acceptButton1.addEventListener("click", () => {
-  consentBox.classList.toggle("hide");
   localStorage.setItem('cookiebannerstate','accept')
+  consentBox.style.visibility = "hidden";
   });
 
 rejectButton1.addEventListener("click", () => {
-  consentBox.classList.toggle("hide");
   localStorage.setItem('cookiebannerstate','refuse')
+  consentBox.style.visibility = "hidden";
   });
 
 

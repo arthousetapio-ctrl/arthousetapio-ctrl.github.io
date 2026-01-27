@@ -2,12 +2,12 @@
 <html>
 
 <head>
-<title>
-{{ site.title }}
-</title>
+    <title>
+        {{ site.title }}
+    </title>
 
-<meta content="width=device-width" name="viewport" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 </head>
 
@@ -30,10 +30,10 @@
         </div>
 
         <div class="child-content1">
-         
+
             {{ content }}
         </div>
-        
+
         <div class="child-footer1">
             {% include footer.html %}
         </div>
@@ -41,6 +41,7 @@
     </div>
 
     <script src="../js/app.js"></script>
+    <script src="{{ site.baseurl }}/js/script.js"></script>
 </body>
 
 </html>

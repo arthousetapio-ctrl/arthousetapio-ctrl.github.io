@@ -2,33 +2,31 @@
 <html>
 
 <head>
-<title>
-{{ site.title }}
-</title>
+    <title>
+        {{ site.title }}
+    </title>
 
-<meta content="width=device-width" name="viewport" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<meta
-  name="{{ page.title }}"
-  content="{{ page.meta_content }}"  />
+    <meta name="{{ page.title }}" content="{{ page.meta_content }}" />
 
 
 
 
-<link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" />
-<link href="{{ site.baseurl }}/css/menu.css" rel="stylesheet" />
-<link href="{{ site.baseurl }}/css/gallery.css" rel="stylesheet" />
-<link href="{{ site.baseurl }}/css/gallery_page.css" rel="stylesheet" />
-<link href="{{ site.baseurl }}/css/content_formatting_layouts.css" rel="stylesheet" />
-<link href="{{ site.baseurl }}/css/events.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/menu.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/gallery.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/gallery_page.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/content_formatting_layouts.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/events.css" rel="stylesheet" />
 
-<link rel="icon" href="{{ site.baseurl }}/Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="{{ site.baseurl }}/Images/favicon.ico" type="image/x-icon" />
 
 </head>
 
 <body>
-    
+
     <div class="info-container1">
         {% include cookie_banner.html %}
 
@@ -38,10 +36,10 @@
 
 
         <div class="child-content1">
-    
+
             {{ content }}
         </div>
-        
+
         <div class="child-footer1">
             {% include footer.html %}
         </div>
@@ -49,6 +47,7 @@
     </div>
 
     <script src="{{ site.baseurl }}/js/app.js"></script>
+    <script src="{{ site.baseurl }}/js/script.js"></script>
 </body>
 
 </html>

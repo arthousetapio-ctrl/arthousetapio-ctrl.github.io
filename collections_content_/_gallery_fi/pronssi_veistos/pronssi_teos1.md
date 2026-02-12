@@ -18,7 +18,3 @@ conversations in it, “and what is the use of a book,” thought Alice
 </div>
 </div>
 
-<div class = "page-spacing">
-
-</div>
-

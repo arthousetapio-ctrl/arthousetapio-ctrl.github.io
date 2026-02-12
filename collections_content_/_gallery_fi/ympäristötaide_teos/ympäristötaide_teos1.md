@@ -1,9 +1,9 @@
 ---
-name: teos1
-teos_name: teos1_name
-teos_year: 2012
-teos_medium: ceramic
-teos_artist_name: artist name
+name: Rising Tapio 
+teos_name: Rising Tapio
+teos_year: 2025
+teos_medium: Luonnonmateriaali
+teos_artist_name: Karhu Delgado
 tile_image: /Images/ympäristötaide/rising_tapio1.jpg
 gallery_img1: /Images/ympäristötaide/rising_tapio1.jpg
 img1_alt_text: asfsff ffsasf asfsafff like 3333

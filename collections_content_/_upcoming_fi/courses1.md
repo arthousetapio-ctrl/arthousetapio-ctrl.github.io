@@ -1,23 +1,38 @@
 ---
-title: Event 1 afsf 22 and akfasjlfjlsajklf
-date: 2025-01-01
+title: Keramiikan alkeiskurssi
+date: 2026-01-01
 name: gallery1
-tile_image: "../Images/gallery_images/sculpture3.jpg"
-gallery_img1: "../Images/gallery_images/sculpture3.jpg"
-img1_alt_text: scu222e imge1 tsafa333sf afsaf asf asf asf
+tile_image: "../Images/kurssikuvat/kurssikuva1.jpg"
+gallery_img1: "../Images/kurssikuvat/kurssikuva1.jpg"
+img1_alt_text: kurssilainen tekee keramiikkaa
 layout: gallery_page_fi
 ---
 
 <div class = "page-spacing">
 <div class="main-page-text">
-Alice was beginning to get very tired of sitting by her sister on the
-bank, and of having nothing to do: once or twice she had peeped into
-the book her sister was reading, but it had no pictures or
-conversations in it, “and what is the use of a book,” thought Alice
-“without pictures or conversations?”
+Keramiikkakurssi
+Keramiikan perusteet 1
+<br>
+Kursseja järjestetään toukokuusta syyskuuhun, kuukauden viimeisenä viikonloppuna la ja su.
+<br>
+Yhden päivän keramiikkakurssit klo 12-16.
+<br>
+Kurssin hinta: 100 euroa.  päivä
+sisältää ohjauksen 4h / päivä, työkalut, materiaalit ja poltot.
+<br>
+Kurssipäivän aikana muotoilemme savesta teoksia ja tutkimme saventyöstön eri tekniikoita:
+Makkara-, peukalo- muotti ja levytekniikat. 
+<br>
+Kirkaslasitus toteutetaan talon puolesta.
+<br>
+Valmiit lasituspolton käyneet keramiikkateokset ovat haettavissa aikaisintaan 2 viikon kuluttua. 
+<br>
+
+Ennakkoilmoittautuminen 2 viikkoa ennen kurssin alkua:
+houseoftapio@gmail.com
 </div>
 </div>
 
 <div class = "page-spacing">
-<img class="page-image2" alt="testtt ttt tt gg 33 " src="../Images/gallery_images/sculpture1.jpg" />
+<img class="page-image2" alt="mustekalaveistos" src="../Images/kurssikuvat/kurssikuva2.jpg" />
 </div>

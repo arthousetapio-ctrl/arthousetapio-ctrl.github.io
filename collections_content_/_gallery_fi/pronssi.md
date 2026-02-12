@@ -1,7 +1,7 @@
 ---
-name: Veistotaide
-tile_image: "/Images/gallery_images/sculpture1.jpg %}"
-gallery_img1: "/Images/gallery_images/sculpture1.jpg"
+name: pronssi taide
+tile_image: "/Images/pronssi_taide/godessofdeath.jpg"
+gallery_img1: "/Images/pronssi_taide/godessofdeath.jpg"
 img1_alt_text: scu222e imge1 tsafa333sf afsaf asf asf asf
 layout: default
 page_type: "gallery"
@@ -13,7 +13,7 @@ page_type: "gallery"
 <div class="tile-container">
 
     {% for item in site.gallery_fi %}
-    {% if item.page_type == "veistotaide_teos" %}
+    {% if item.page_type == "pronssi_taide" %}
     <div class="tile-card">
         {% include gallery_tile_layout_teos_description.html %}
     </div>
@@ -32,5 +32,5 @@ page_type: "gallery"
 
 <div class = "page-spacing">
 
-<img class="page-image2" alt="testtt ttt tt gg 33 " src="{% link /Images/gallery_images/sculpture2.jpg %}"/>
+
 </div>

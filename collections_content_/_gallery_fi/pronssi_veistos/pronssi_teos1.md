@@ -1,10 +1,10 @@
 ---
 name: teos1
-tile_image: /Images/gallery_images/sculpture3.jpg
-gallery_img1: /Images/gallery_images/sculpture3.jpg
+tile_image: "/Images/pronssi_taide/godessofdeath.jpg"
+gallery_img1: "/Images/pronssi_taide/godessofdeath.jpg"
 img1_alt_text: asfsff
 layout: gallery_page_fi
-page_type: "veistotaide_teos"
+page_type: "pronssi_taide"
 title: teos1
 
 ---

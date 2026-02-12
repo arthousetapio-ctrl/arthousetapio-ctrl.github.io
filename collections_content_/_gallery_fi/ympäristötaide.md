@@ -1,7 +1,7 @@
 ---
 name: Ympäristötaide
-tile_image: "/Images/gallery_images/sculpture1.jpg %}"
-gallery_img1: "/Images/gallery_images/sculpture1.jpg"
+tile_image: "/Images/ympäristötaide/YPT_kansikuva.jpg"
+gallery_img1: "/Images/ympäristötaide/YPT_kansikuva.jpg"
 img1_alt_text: scu222e imge1 tsafa333sf afsaf asf asf asf
 layout: default
 page_type: "gallery"

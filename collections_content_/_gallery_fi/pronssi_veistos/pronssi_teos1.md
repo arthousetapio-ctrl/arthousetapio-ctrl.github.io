@@ -17,8 +17,8 @@ conversations in it, “and what is the use of a book,” thought Alice
 “without pictures or conversations?”
 </div>
 </div>
-      <img alt="" class="header-image" src="{{ site.baseurl }}/Images/Header/header2.png" />
+
 <div class = "page-spacing">
-<img class="page-image2" alt="" src="{% link /Images/gallery_images/sculpture2.jpg %}" />
+
 </div>
 
